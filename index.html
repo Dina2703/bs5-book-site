@@ -123,6 +123,111 @@
     <!-- fst - stands for  font-style -->
     <div class="fst-italic">italic text</div>
     <div class="fst-italic fw-light">italic light text</div>
+    <h1 class="text-danger text-center">Bootstrap 5 Container</h1>
+    <div class="container my-5">
+      <h2>normal container</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        repellat a, perferendis aliquam illum odio aliquid eius sapiente dolores
+        enim, quos commodi sint quo nisi ullam fugiat ipsum eveniet ipsa?
+      </p>
+    </div>
+
+    <div class="container-lg my-5">
+      <h2>
+        large container, gives 100% width until lg (1200px) screens, then
+        container
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        repellat a, perferendis aliquam illum odio aliquid eius sapiente dolores
+        enim, quos commodi sint quo nisi ullam fugiat ipsum eveniet ipsa?
+      </p>
+    </div>
+    <div class="container-xl my-5">
+      <h2>
+        large container, gives 100% width until xl (1400px) screens, then
+        container
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        repellat a, perferendis aliquam illum odio aliquid eius sapiente dolores
+        enim, quos commodi sint quo nisi ullam fugiat ipsum eveniet ipsa?
+      </p>
+    </div>
+    <div class="container-fluid my-5">
+      <h2>fluid container</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        repellat a, perferendis aliquam illum odio aliquid eius sapiente dolores
+        enim, quos commodi sint quo nisi ullam fugiat ipsum eveniet ipsa?
+      </p>
+    </div>
+
+    <h1 class="text-danger text-center">Bootstrap 5 Grid System</h1>
+
+    <div class="container-lg my-5">
+      <h2>basic grid</h2>
+      <div class="row">
+        <!-- 'col' gives equal space for each col within a row, but in very small size grid will look unorganized. -->
+        <div class="col">
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg my-5">
+      <h2>column widths</h2>
+      <div class="row">
+        <!-- 'col-number'  used to specify the col width, controlled cols, but they sqished, and they have different height -->
+        <div class="col-6">
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col-3">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col-3">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg my-5">
+      <h2>responsive column widths</h2>
+      <div class="row">
+        <!-- 'col-breakPoint-number' for different break-poitns we define different col width -->
+        <!-- When we don't specify 'col', by default for xs size od screens the cols gonna take up all 12. -->
+        <div class="col-sm-4 col-lg-6">
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col-sm-4 col-lg-3">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col-sm-4 col-lg-3">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg my-5">
+      <h2>justify columns</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
+    </div>
 
     <div class="m-5 p-5"></div>
     <script
