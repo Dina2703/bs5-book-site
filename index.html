@@ -12,6 +12,11 @@
     />
     <title>BS5 - bookSite</title>
     <style>
+      body::before {
+        display: block;
+        content: "";
+        height: 50px;
+      }
       section {
         padding: 60px 0;
       }
@@ -19,13 +24,60 @@
   </head>
   <body>
     <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+      <div class="container-xxl">
+        <a href="#intro" class="navbar-brand"
+          ><span class="fw-bold text-secondary">
+            ⭐️ Coder Girl - React Course</span
+          ></a
+        >
+
+        <!-- toggle button for mobile nav -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#topics" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Get in touch</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <a href="#pricing" class="btn btn-secondary">buy now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <!-- main image & intro text -->
     <section id="intro">
       <div class="container-lg">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-5 text-center text-md-start">
             <h1>
-              <div class="display-2">Coder-Girls</div>
+              <div class="display-2">Coder-Girl</div>
               <div class="display-5 text-muted">Your Coding Skills</div>
             </h1>
             <p class="lead my-4 text-muted">
