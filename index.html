@@ -90,11 +90,18 @@
             <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
           </div>
           <div class="col md-5 text-center d-none d-md-block">
-            <img
-              src="/assets//coderGirl.svg"
-              class="img-fluid"
-              alt="things to do"
-            />
+            <!-- tooltip -->
+            <span
+              class="handleTooltip"
+              data-bs-placement="bottom"
+              title="Coding Girl Course Cover"
+            >
+              <img
+                src="/assets//coderGirl.svg"
+                class="img-fluid"
+                alt="things to do"
+              />
+            </span>
           </div>
         </div>
       </div>
@@ -447,6 +454,16 @@
                   id="email"
                   placeholder="e.g. example@example.com."
                 />
+                <!-- tooltip -->
+                <span
+                  class="handleTooltip"
+                  data-bs-placement="bottom"
+                  title="Enter an Email address we can reply to"
+                >
+                  <span class="input-group-text"
+                    ><i class="bi bi-question-circle text-muted"></i
+                  ></span>
+                </span>
               </div>
               <label for="name" class="form-label">Name: </label>
               <div class="input-group mb-4">
@@ -498,5 +515,11 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const tooltips = document.querySelectorAll(".handleTooltip");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
   </body>
 </html>
