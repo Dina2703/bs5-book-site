@@ -88,6 +88,15 @@
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+            <!-- open sidebar / offcanvas -->
+            <a
+              href="#sidebar"
+              class="d-block mt-3"
+              data-bs-toggle="offcanvas"
+              role="button"
+              aria-controls="sidebar"
+              >Explore our other courses</a
+            >
           </div>
           <div class="col md-5 text-center d-none d-md-block">
             <!-- tooltip -->
@@ -575,6 +584,33 @@
             <button class="btn btn-primary">Submit</button>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="sidebar"
+      aria-labelledby="sidebar-label"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">Our other courses</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+          <li>MUI</li>
+          <li>REDUX</li>
+        </ul>
       </div>
     </div>
 
