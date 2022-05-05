@@ -1,0 +1,27 @@
+//always set custom sass above the import, so the new style can be applied to bootstrap variables. Since the Bootstrap sass says:
+//"$primary:       $blue !default;" , it means only apply blue color if any other color hasn't been declared.
+// bootstrap variables with custom values
+$primary: #c325db;
+$light: #fcf7fc;
+
+//import the functions & variables for our custom theme colors
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+//custom theme colors
+$custom-theme-colors: (
+  "altgreen": #79e888,
+  "altdanger": #d64f7c,
+);
+
+//below we merging our custom theme for colors and default Bootstrap theme for colors, then assining it into '$theme-colors'. Now, theme colors should include both old default and new custom theme color variables. Now we can use these two new custom variables into our project.
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+//import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//After we declared our custom styles for bootstrap classes, to see our custom style, we need to use any sass compiler to compile our sass to final css file that we can then use in our html page.
+// we'll use Live Sass Compiler package.
+//Live Sass Compiler watches  our sass file for any changes then automatically complie that sass file into a css file whenever a change is made and saved.
+//to turn on the compiler press 'watch sass' below.
